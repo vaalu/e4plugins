@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Simple
+Bundle-SymbolicName: e4plugins.v5.simple;singleton:=true
+Bundle-Version: 1.0.0.202202241459
+Bundle-Activator: e4plugins.v5.simple.Activator
+Bundle-Vendor: Jeani.in
+Require-Bundle: javax.inject,org.eclipse.osgi,org.eclipse.jface,org.ecli
+ pse.e4.ui.model.workbench,org.eclipse.e4.ui.di,org.eclipse.e4.ui.servic
+ es,org.eclipse.e4.core.di.annotations,org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Automatic-Module-Name: e4plugins.v5.simple
+Import-Package: javax.annotation;version="1.2.0"
+Bundle-ActivationPolicy: lazy
+
