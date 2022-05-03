@@ -16,12 +16,17 @@
 		<tycho-version>2.6.0</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<eclipse-repo.url>http://download.eclipse.org/releases/latest</eclipse-repo.url>
+		<eclipse.p2.repo.url>https://maven.irisa.fr/artifactory/list/kermeta-public-release/</eclipse.p2.repo.url>
 	</properties>
 	<repositories>
 		<repository>
 			<id>eclipse-release</id>
 			<url>${eclipse-repo.url}</url>
 			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>eclipse-p2</id>
+			<url>${eclipse.p2.repo.url}</url>
 		</repository>
 	</repositories>
 	<build>
@@ -73,5 +78,40 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.eclipse.tycho
+										</groupId>
+										<artifactId>
+											target-platform-configuration
+										</artifactId>
+										<versionRange>
+											[2.6.0,)
+										</versionRange>
+										<goals>
+											<goal>target-platform</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 </project>

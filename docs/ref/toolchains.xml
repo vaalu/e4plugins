@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolchains>
+	<!-- JDK toolchains -->
+	<!-- Change the path according to JDK installation path in local system -->
+	<toolchain>
+		<type>jdk</type>
+		<provides>
+			<version>JavaSE-11</version>
+			<vendor>oracle</vendor>
+		</provides>
+		<configuration>
+			<jdkHome>C:/Programs/java/jdk-11.0.12.7-openj9</jdkHome>
+		</configuration>
+	</toolchain>
+	<toolchain>
+		<type>jdk</type>
+		<provides>
+			<version>JavaSE-17</version>
+			<vendor>oracle</vendor>
+		</provides>
+		<configuration>
+			<jdkHome>C:/Programs/java/OpenJDK17U-17.0.2_8</jdkHome>
+		</configuration>
+	</toolchain>
+</toolchains>

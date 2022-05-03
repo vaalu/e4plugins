@@ -7,7 +7,6 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../e4plugins.v5.parent/pom.xml</relativePath>
 	</parent>
-	<groupId>e4plugins.v5</groupId>
 	<artifactId>e4plugins.v5.feature</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>eclipse-feature</packaging>
